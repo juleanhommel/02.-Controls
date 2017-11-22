@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_02.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Tic Tac Toe" Height="650" Width="600">
+    <Grid Background="White">
+        <Grid.OpacityMask>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.OpacityMask>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="btnButton1" FontSize="150" Content="" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton1_Click" Background="White" BorderBrush="Red"/>
+        <Button Name="btnButton2" FontSize="150" Content="" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton2_Click" Background="White" BorderBrush="Red"/>
+        <Button Name="btnButton3" FontSize="150" Content="" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton3_Click" BorderBrush="Red" Background="White"/>
+        <Button Name="btnButton4" FontSize="150" Content="" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton4_Click" BorderBrush="Red" Background="White"/>
+        <Button Name="btnButton5" FontSize="150" Content="" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton5_Click" Background="White" BorderBrush="Red"/>
+        <Button Name="btnButton6" FontSize="150" Content="" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton6_Click" BorderBrush="Red" Background="White"/>
+        <Button Name="btnButton7" FontSize="150" Content="" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton7_Click" Background="White" BorderBrush="Red"/>
+        <Button Name="btnButton8" FontSize="150" Content="" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton8_Click" BorderBrush="Red" Background="White"/>
+        <Button Name="btnButton9" FontSize="150" Content="" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton9_Click" Background="White" BorderBrush="Red"/>
+        <Button Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="592" Height="48" Click="Button_Click" Background="White" BorderBrush="Red" Foreground="Red" FontWeight="Bold" FontSize="18" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>
