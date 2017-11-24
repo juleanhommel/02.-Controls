@@ -215,17 +215,5 @@ namespace _02.Controls
                 Button_Click(null, null);
             }
         }
-
-        private void PlayerTurn_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (Imige == true)
-            {
-                Content = "O";
-            }
-            else if (Imige == false)
-            {
-                Content = "X";
-            }
-        }
     }
 }

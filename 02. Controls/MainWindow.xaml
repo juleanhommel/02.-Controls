@@ -34,7 +34,7 @@
         <Button Name="btnButton7" FontSize="150" Content="" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton7_Click" Background="White" BorderBrush="Red"/>
         <Button Name="btnButton8" FontSize="150" Content="" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton8_Click" BorderBrush="Red" Background="White"/>
         <Button Name="btnButton9" FontSize="150" Content="" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="197" Height="190" Click="btnButton9_Click" Background="White" BorderBrush="Red"/>
-        <Button Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="395" Height="48" Click="Button_Click" Background="White" BorderBrush="Red" Foreground="Red" FontWeight="Bold" FontSize="18" Grid.ColumnSpan="2">
+        <Button Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="592" Height="48" Click="Button_Click" Background="White" BorderBrush="Red" Foreground="Red" FontWeight="Bold" FontSize="18" Grid.ColumnSpan="3">
         </Button>
     </Grid>
 </Window>
