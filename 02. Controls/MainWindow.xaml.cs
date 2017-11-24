@@ -20,173 +20,146 @@ namespace _02.Controls
     /// </summary>
     public partial class MainWindow : Window
     {
+        public bool Imige = false;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        public bool Imige = false;
-
         public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton1.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton1.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton1.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton2_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton2.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton2.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton2.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton3_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton3.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton3.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton3.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton4_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton4.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton4.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton4.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton5_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton5.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton5.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton5.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton6_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton6.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton6.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton6.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton7_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton7.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton7.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton7.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton8_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton8.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton8.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton8.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void btnButton9_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton9.Content.ToString() == "")
+            if (Imige == false)
             {
-                if (Imige == false)
-                {
-                    btnButton9.Content = "X";
-                    Imige = true;
-                }
-                else if (Imige == true)
-                {
-                    btnButton9.Content = "O";
-                    Imige = false;
-                }
-                Winner();
+                Content = "X";
+                Imige = true;
             }
+            else if (Imige == true)
+            {
+                Content = "O";
+                Imige = false;
+            }
+            Winner();
         }
 
         public void Button_Click(object sender, RoutedEventArgs e)
