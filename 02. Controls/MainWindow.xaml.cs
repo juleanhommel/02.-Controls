@@ -27,7 +27,7 @@ namespace _02.Controls
 
         public bool Imige = false;
 
-        private void btnButton1_Click(object sender, RoutedEventArgs e)
+        public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton1.Content.ToString() == "")
             {
@@ -41,10 +41,11 @@ namespace _02.Controls
                     btnButton1.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton2_Click(object sender, RoutedEventArgs e)
+        public void btnButton2_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton2.Content.ToString() == "")
             {
@@ -58,10 +59,11 @@ namespace _02.Controls
                     btnButton2.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton3_Click(object sender, RoutedEventArgs e)
+        public void btnButton3_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton3.Content.ToString() == "")
             {
@@ -75,10 +77,11 @@ namespace _02.Controls
                     btnButton3.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton4_Click(object sender, RoutedEventArgs e)
+        public void btnButton4_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton4.Content.ToString() == "")
             {
@@ -92,10 +95,11 @@ namespace _02.Controls
                     btnButton4.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton5_Click(object sender, RoutedEventArgs e)
+        public void btnButton5_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton5.Content.ToString() == "")
             {
@@ -109,10 +113,11 @@ namespace _02.Controls
                     btnButton5.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton6_Click(object sender, RoutedEventArgs e)
+        public void btnButton6_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton6.Content.ToString() == "")
             {
@@ -126,10 +131,11 @@ namespace _02.Controls
                     btnButton6.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton7_Click(object sender, RoutedEventArgs e)
+        public void btnButton7_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton7.Content.ToString() == "")
             {
@@ -143,10 +149,11 @@ namespace _02.Controls
                     btnButton7.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton8_Click(object sender, RoutedEventArgs e)
+        public void btnButton8_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton8.Content.ToString() == "")
             {
@@ -160,10 +167,11 @@ namespace _02.Controls
                     btnButton8.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void btnButton9_Click(object sender, RoutedEventArgs e)
+        public void btnButton9_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton9.Content.ToString() == "")
             {
@@ -177,10 +185,11 @@ namespace _02.Controls
                     btnButton9.Content = "O";
                     Imige = false;
                 }
+                Winner();
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
             btnButton1.Content = "";
             btnButton2.Content = "";
@@ -191,6 +200,32 @@ namespace _02.Controls
             btnButton7.Content = "";
             btnButton8.Content = "";
             btnButton9.Content = "";
+        }
+
+        public void Winner()
+        {
+            if(btnButton1.Content == "X" && btnButton2.Content == "X" && btnButton3.Content == "X" || btnButton4.Content == "X" && btnButton5.Content == "X" && btnButton6.Content == "X" || btnButton7.Content == "X" && btnButton8.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton4.Content == "X" && btnButton7.Content == "X" || btnButton2.Content == "X" && btnButton5.Content == "X" && btnButton8.Content == "X" || btnButton3.Content == "X" && btnButton6.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton5.Content == "X" && btnButton9.Content == "X" || btnButton3.Content == "X" && btnButton5.Content == "X" && btnButton7.Content == "X")
+            {
+                MessageBox.Show("X heeft gewonnen", "gefeliciteerd");
+                Button_Click(null, null);
+            }
+            else if (btnButton1.Content == "O" && btnButton2.Content == "O" && btnButton3.Content == "O" || btnButton4.Content == "O" && btnButton5.Content == "O" && btnButton6.Content == "O" || btnButton7.Content == "O" && btnButton8.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton4.Content == "O" && btnButton7.Content == "O" || btnButton2.Content == "O" && btnButton5.Content == "O" && btnButton8.Content == "O" || btnButton3.Content == "O" && btnButton6.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton5.Content == "O" && btnButton9.Content == "O" || btnButton3.Content == "O" && btnButton5.Content == "O" && btnButton7.Content == "O")
+            {
+                MessageBox.Show("O heeft gewonnen", "gefeliciteerd");
+                Button_Click(null, null);
+            }
+        }
+
+        private void PlayerTurn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Imige == true)
+            {
+                Content = "O";
+            }
+            else if (Imige == false)
+            {
+                Content = "X";
+            }
         }
     }
 }
