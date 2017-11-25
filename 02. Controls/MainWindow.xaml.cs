@@ -29,6 +29,7 @@ namespace _02.Controls
 
         public bool Imige = false;
 
+
         public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
             if (btnButton1.Content == "")
@@ -36,11 +37,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton1.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton1.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -54,11 +57,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton2.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton2.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -72,11 +77,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton3.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton3.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -90,11 +97,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton4.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton4.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -108,11 +117,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton5.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton5.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -126,11 +137,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton6.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton6.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -144,11 +157,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton7.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton7.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -162,11 +177,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton8.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton8.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -180,11 +197,13 @@ namespace _02.Controls
                 if (Imige == false)
                 {
                     btnButton9.Content = "X";
+                    txtPlayerTurn.Text = "Player turn: O";
                     Imige = true;
                 }
                 else if (Imige == true)
                 {
                     btnButton9.Content = "O";
+                    txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
                 Winner();
@@ -216,6 +235,11 @@ namespace _02.Controls
                 MessageBox.Show("O heeft gewonnen", "gefeliciteerd");
                 Button_Click(null, null);
             }
+        }
+
+        public void txtPlayerTurn_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
