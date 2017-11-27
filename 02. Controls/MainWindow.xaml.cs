@@ -29,7 +29,7 @@ namespace _02.Controls
 
         public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton1.Content == "")
+            if ((string)btnButton1.Content == "")
             {
                 if (Imige == false)
                 {
@@ -49,7 +49,7 @@ namespace _02.Controls
 
         public void btnButton2_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton2.Content == "")
+            if ((string)btnButton2.Content == "")
             {
                 if (Imige == false)
                 {
@@ -69,7 +69,7 @@ namespace _02.Controls
 
         public void btnButton3_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton3.Content == "")
+            if ((string)btnButton3.Content == "")
             {
                 if (Imige == false)
                 {
@@ -89,7 +89,7 @@ namespace _02.Controls
 
         public void btnButton4_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton4.Content == "")
+            if ((string)btnButton4.Content == "")
             {
                 if (Imige == false)
                 {
@@ -109,7 +109,7 @@ namespace _02.Controls
 
         public void btnButton5_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton5.Content == "")
+            if ((string)btnButton5.Content == "")
             {
                 if (Imige == false)
                 {
@@ -129,7 +129,7 @@ namespace _02.Controls
 
         public void btnButton6_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton6.Content == "")
+            if ((string)btnButton6.Content == "")
             {
                 if (Imige == false)
                 {
@@ -149,7 +149,7 @@ namespace _02.Controls
 
         public void btnButton7_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton7.Content == "")
+            if ((string)btnButton7.Content == "")
             {
                 if (Imige == false)
                 {
@@ -169,7 +169,7 @@ namespace _02.Controls
 
         public void btnButton8_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton8.Content == "")
+            if ((string)btnButton8.Content == "")
             {
                 if (Imige == false)
                 {
@@ -189,7 +189,7 @@ namespace _02.Controls
 
         public void btnButton9_Click(object sender, RoutedEventArgs e)
         {
-            if (btnButton9.Content == "")
+            if ((string)btnButton9.Content == "")
             {
                 if (Imige == false)
                 {
@@ -224,12 +224,17 @@ namespace _02.Controls
         {
             if(btnButton1.Content == "X" && btnButton2.Content == "X" && btnButton3.Content == "X" || btnButton4.Content == "X" && btnButton5.Content == "X" && btnButton6.Content == "X" || btnButton7.Content == "X" && btnButton8.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton4.Content == "X" && btnButton7.Content == "X" || btnButton2.Content == "X" && btnButton5.Content == "X" && btnButton8.Content == "X" || btnButton3.Content == "X" && btnButton6.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton5.Content == "X" && btnButton9.Content == "X" || btnButton3.Content == "X" && btnButton5.Content == "X" && btnButton7.Content == "X")
             {
-                MessageBox.Show("X heeft gewonnen", "gefeliciteerd");
+                MessageBox.Show("X heeft gewonnen!", "gefeliciteerd");
                 Button_Click(null, null);
             }
             else if (btnButton1.Content == "O" && btnButton2.Content == "O" && btnButton3.Content == "O" || btnButton4.Content == "O" && btnButton5.Content == "O" && btnButton6.Content == "O" || btnButton7.Content == "O" && btnButton8.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton4.Content == "O" && btnButton7.Content == "O" || btnButton2.Content == "O" && btnButton5.Content == "O" && btnButton8.Content == "O" || btnButton3.Content == "O" && btnButton6.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton5.Content == "O" && btnButton9.Content == "O" || btnButton3.Content == "O" && btnButton5.Content == "O" && btnButton7.Content == "O")
             {
-                MessageBox.Show("O heeft gewonnen", "gefeliciteerd");
+                MessageBox.Show("O heeft gewonnen!", "gefeliciteerd");
+                Button_Click(null, null);
+            }
+            else if(btnButton1.Content != "" && btnButton2.Content != "" && btnButton3.Content != "" && btnButton4.Content != "" && btnButton5.Content != "" && btnButton6.Content != "" && btnButton7.Content != "" && btnButton8.Content != "" && btnButton9.Content != "")
+            {
+                MessageBox.Show("Het is geen gelijk spel!!!", "");
                 Button_Click(null, null);
             }
         }
