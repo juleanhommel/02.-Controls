@@ -20,15 +20,12 @@ namespace _02.Controls
     /// </summary>
     public partial class MainWindow : Window
     {
-
-
         public MainWindow()
         {
             InitializeComponent();
         }
 
         public bool Imige = false;
-
 
         public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
@@ -235,11 +232,6 @@ namespace _02.Controls
                 MessageBox.Show("O heeft gewonnen", "gefeliciteerd");
                 Button_Click(null, null);
             }
-        }
-
-        public void txtPlayerTurn_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
