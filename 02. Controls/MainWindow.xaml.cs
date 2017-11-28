@@ -238,19 +238,19 @@ namespace _02.Controls
 
         public void Winner()
         {
-            if(btnButton1.Content == "X" && btnButton2.Content == "X" && btnButton3.Content == "X" || btnButton4.Content == "X" && btnButton5.Content == "X" && btnButton6.Content == "X" || btnButton7.Content == "X" && btnButton8.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton4.Content == "X" && btnButton7.Content == "X" || btnButton2.Content == "X" && btnButton5.Content == "X" && btnButton8.Content == "X" || btnButton3.Content == "X" && btnButton6.Content == "X" && btnButton9.Content == "X" || btnButton1.Content == "X" && btnButton5.Content == "X" && btnButton9.Content == "X" || btnButton3.Content == "X" && btnButton5.Content == "X" && btnButton7.Content == "X")
+            if ((string)btnButton1.Content == "X" && (string)btnButton2.Content == "X" && (string)btnButton3.Content == "X" || (string)btnButton4.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton6.Content == "X" || (string)btnButton7.Content == "X" && (string)btnButton8.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton1.Content == "X" && (string)btnButton4.Content == "X" && (string)btnButton7.Content == "X" || (string)btnButton2.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton8.Content == "X" || (string)btnButton3.Content == "X" && (string)btnButton6.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton1.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton3.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton7.Content == "X")
             {
                 MessageBox.Show("X has won!", "Congratulations");
                 Button_Click(null, null);
                 Xwins++;
             }
-            else if (btnButton1.Content == "O" && btnButton2.Content == "O" && btnButton3.Content == "O" || btnButton4.Content == "O" && btnButton5.Content == "O" && btnButton6.Content == "O" || btnButton7.Content == "O" && btnButton8.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton4.Content == "O" && btnButton7.Content == "O" || btnButton2.Content == "O" && btnButton5.Content == "O" && btnButton8.Content == "O" || btnButton3.Content == "O" && btnButton6.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton5.Content == "O" && btnButton9.Content == "O" || btnButton3.Content == "O" && btnButton5.Content == "O" && btnButton7.Content == "O")
+            else if ((string)btnButton1.Content == "O" && (string)btnButton2.Content == "O" && (string)btnButton3.Content == "O" || (string)btnButton4.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton6.Content == "O" || (string)btnButton7.Content == "O" && (string)btnButton8.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton1.Content == "O" && (string)btnButton4.Content == "O" && (string)btnButton7.Content == "O" || (string)btnButton2.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton8.Content == "O" || (string)btnButton3.Content == "O" && (string)btnButton6.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton1.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton3.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton7.Content == "O")
             {
                 MessageBox.Show("O has won!", "Congratulations");
                 Button_Click(null, null);
                 Owins++;
             }
-            else if(btnButton1.Content != "" && btnButton2.Content != "" && btnButton3.Content != "" && btnButton4.Content != "" && btnButton5.Content != "" && btnButton6.Content != "" && btnButton7.Content != "" && btnButton8.Content != "" && btnButton9.Content != "")
+            else if ((string)btnButton1.Content != "" && (string)btnButton2.Content != "" && (string)btnButton3.Content != "" && (string)btnButton4.Content != "" && (string)btnButton5.Content != "" && (string)btnButton6.Content != "" && (string)btnButton7.Content != "" && (string)btnButton8.Content != "" && (string)btnButton9.Content != "")
             {
                 MessageBox.Show("It's a tie!!!", "");
                 Button_Click(null, null);
