@@ -26,6 +26,8 @@ namespace _02.Controls
         }
 
         public bool Imige = false;
+        int Xwins = 0;
+        int Owins = 0;
 
         public void btnButton1_Click(object sender, RoutedEventArgs e)
         {
@@ -44,6 +46,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -64,6 +67,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -84,6 +88,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -104,6 +109,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -124,6 +130,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -144,6 +151,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -164,6 +172,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -184,6 +193,7 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
         }
 
@@ -204,7 +214,13 @@ namespace _02.Controls
                     Imige = false;
                 }
                 Winner();
+                XorOwins();
             }
+        }
+
+        public void XorOwins()
+        {
+            txtNumberWins.Text = "O wins: " + Owins + " / X wins: " + Xwins;
         }
 
         public void Button_Click(object sender, RoutedEventArgs e)
@@ -226,11 +242,13 @@ namespace _02.Controls
             {
                 MessageBox.Show("X heeft gewonnen!", "gefeliciteerd");
                 Button_Click(null, null);
+                Xwins++;
             }
             else if (btnButton1.Content == "O" && btnButton2.Content == "O" && btnButton3.Content == "O" || btnButton4.Content == "O" && btnButton5.Content == "O" && btnButton6.Content == "O" || btnButton7.Content == "O" && btnButton8.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton4.Content == "O" && btnButton7.Content == "O" || btnButton2.Content == "O" && btnButton5.Content == "O" && btnButton8.Content == "O" || btnButton3.Content == "O" && btnButton6.Content == "O" && btnButton9.Content == "O" || btnButton1.Content == "O" && btnButton5.Content == "O" && btnButton9.Content == "O" || btnButton3.Content == "O" && btnButton5.Content == "O" && btnButton7.Content == "O")
             {
                 MessageBox.Show("O heeft gewonnen!", "gefeliciteerd");
                 Button_Click(null, null);
+                Owins++;
             }
             else if(btnButton1.Content != "" && btnButton2.Content != "" && btnButton3.Content != "" && btnButton4.Content != "" && btnButton5.Content != "" && btnButton6.Content != "" && btnButton7.Content != "" && btnButton8.Content != "" && btnButton9.Content != "")
             {
