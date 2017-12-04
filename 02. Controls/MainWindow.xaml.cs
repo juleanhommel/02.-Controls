@@ -45,8 +45,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -66,8 +65,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -87,8 +85,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -108,8 +105,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -129,8 +125,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -150,8 +145,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -171,8 +165,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -192,8 +185,7 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
         }
 
@@ -213,9 +205,14 @@ namespace _02.Controls
                     txtPlayerTurn.Text = "Player turn: X";
                     Imige = false;
                 }
-                Winner();
-                XorOwins();
+                check();
             }
+        }
+
+        public void check()
+        {
+            Winner();
+            XorOwins();
         }
 
         public void XorOwins()
