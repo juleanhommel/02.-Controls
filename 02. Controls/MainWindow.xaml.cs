@@ -220,7 +220,7 @@ namespace _02.Controls
             txtNumberWins.Text = "O wins: " + Owins + " / X wins: " + Xwins;
         }
 
-        public void Button_Click(object sender, RoutedEventArgs e)
+        public void Clear()
         {
             btnButton1.Content = "";
             btnButton2.Content = "";
@@ -238,20 +238,37 @@ namespace _02.Controls
             if ((string)btnButton1.Content == "X" && (string)btnButton2.Content == "X" && (string)btnButton3.Content == "X" || (string)btnButton4.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton6.Content == "X" || (string)btnButton7.Content == "X" && (string)btnButton8.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton1.Content == "X" && (string)btnButton4.Content == "X" && (string)btnButton7.Content == "X" || (string)btnButton2.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton8.Content == "X" || (string)btnButton3.Content == "X" && (string)btnButton6.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton1.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton9.Content == "X" || (string)btnButton3.Content == "X" && (string)btnButton5.Content == "X" && (string)btnButton7.Content == "X")
             {
                 MessageBox.Show("X has won!", "Congratulations");
-                Button_Click(null, null);
+                Clear();
                 Xwins++;
             }
             else if ((string)btnButton1.Content == "O" && (string)btnButton2.Content == "O" && (string)btnButton3.Content == "O" || (string)btnButton4.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton6.Content == "O" || (string)btnButton7.Content == "O" && (string)btnButton8.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton1.Content == "O" && (string)btnButton4.Content == "O" && (string)btnButton7.Content == "O" || (string)btnButton2.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton8.Content == "O" || (string)btnButton3.Content == "O" && (string)btnButton6.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton1.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton9.Content == "O" || (string)btnButton3.Content == "O" && (string)btnButton5.Content == "O" && (string)btnButton7.Content == "O")
             {
                 MessageBox.Show("O has won!", "Congratulations");
-                Button_Click(null, null);
+                Clear();
                 Owins++;
             }
             else if ((string)btnButton1.Content != "" && (string)btnButton2.Content != "" && (string)btnButton3.Content != "" && (string)btnButton4.Content != "" && (string)btnButton5.Content != "" && (string)btnButton6.Content != "" && (string)btnButton7.Content != "" && (string)btnButton8.Content != "" && (string)btnButton9.Content != "")
             {
                 MessageBox.Show("It's a tie!!!", "");
-                Button_Click(null, null);
+                Clear();
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            btnButton1.Content = "";
+            btnButton2.Content = "";
+            btnButton3.Content = "";
+            btnButton4.Content = "";
+            btnButton5.Content = "";
+            btnButton6.Content = "";
+            btnButton7.Content = "";
+            btnButton8.Content = "";
+            btnButton9.Content = "";
+
+            Xwins = 0;
+            Owins = 0;
+            XorOwins();
         }
     }
 }
